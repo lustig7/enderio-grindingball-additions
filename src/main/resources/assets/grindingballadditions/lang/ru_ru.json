@@ -2,7 +2,7 @@
   "item.grindingballadditions.allthemodium_grindingball": "Шар для шлифования Allthemodium",
   "item.grindingballadditions.unobtainium_grindingball": "Шар для шлифования Unobtainium",
   "item.grindingballadditions.vibranium_grindingball": "Шар для шлифования Vibranium",
-  "item.grindingballadditions.infinite_grindingball": "Шар для шлифования Enderium",
+  "item.grindingballadditions.infinite_grindingball": "Шар для шлифования Бесконечности",
   "tab.grindingballadditions.grindingball": "Шары для шлифования",
   "advancements.grindingballadditions.root.title": "Шары для шлифования",
   "advancements.grindingballadditions.root.description": "Откройте для себя силу шаров для шлифования!",
@@ -13,5 +13,5 @@
   "advancements.grindingballadditions.vibranium_grindingball.title": "Идеальная острота!",
   "advancements.grindingballadditions.vibranium_grindingball.description": "Получите шар для шлифования Vibranium!",
   "advancements.grindingballadditions.infinite_grindingball.title": "Идеальное шлифование!",
-  "advancements.grindingballadditions.infinite_grindingball.description": "Вы получили идеальный шар для шлифования Enderium. Теперь ничто не сможет вас замедлить!"
+  "advancements.grindingballadditions.infinite_grindingball.description": "Вы получили идеальный шар для шлифования Бесконечности. Теперь ничто не сможет вас замедлить!"
 }

@@ -2,7 +2,7 @@
   "item.grindingballadditions.allthemodium_grindingball": "Bola Molturadora de Allthemodium",
   "item.grindingballadditions.unobtainium_grindingball": "Bola Molturadora de Unobtainium",
   "item.grindingballadditions.vibranium_grindingball": "Bola Molturadora de Vibranium",
-  "item.grindingballadditions.infinite_grindingball": "Bola Molturadora de Enderium",
+  "item.grindingballadditions.infinite_grindingball": "Bola Molturadora Infinita",
   "tab.grindingballadditions.grindingball": "Bolas Molturaras",
   "advancements.grindingballadditions.root.title": "Bolas Molturaras",
   "advancements.grindingballadditions.root.description": "¡Descubre el poder de las bolas molturaras!",
@@ -13,5 +13,5 @@
   "advancements.grindingballadditions.vibranium_grindingball.title": "¡Nitidez Definitiva!",
   "advancements.grindingballadditions.vibranium_grindingball.description": "¡Consigue la bola molturadora de Vibranium!",
   "advancements.grindingballadditions.infinite_grindingball.title": "¡La Molienda Perfecta!",
-  "advancements.grindingballadditions.infinite_grindingball.description": "¡Has obtenido la bola molturadora de Enderium definitiva! ¡Ahora nada puede ralentizarte!"
+  "advancements.grindingballadditions.infinite_grindingball.description": "¡Has obtenido la bola molturadora infinita definitiva! ¡Ahora nada puede ralentizarte!"
 }

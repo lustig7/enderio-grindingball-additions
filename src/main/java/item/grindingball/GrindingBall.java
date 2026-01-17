@@ -11,7 +11,7 @@ public class GrindingBall {
         1.8f,
         2.0f,
         1.4f,
-        90000
+        360000
     );
 
 
@@ -19,7 +19,7 @@ public class GrindingBall {
         2.0f,
         4.0f,
         2.0f,
-        240000
+        1060000
     );
 
 
@@ -27,7 +27,7 @@ public class GrindingBall {
         3.0f,
         2.0f,
         1.0f,
-        300000
+        1600000
     );
 
     /**

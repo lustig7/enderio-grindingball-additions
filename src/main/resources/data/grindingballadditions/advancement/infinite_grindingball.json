@@ -1,23 +1,32 @@
 {
+  "parent": "grindingballadditions:root",
   "display": {
     "icon": {
-      "id": "capacitoradditions:allthemodium_capacitor"
+      "id": "grindingballadditions:infinite_grindingball"
     },
     "title": {
-      "translate": "advancements.capacitoradditions.root.title"
+      "translate": "advancements.grindingballadditions.infinite_grindingball.title"
     },
     "description": {
-      "translate": "advancements.capacitoradditions.root.description"
+      "translate": "advancements.grindingballadditions.infinite_grindingball.description"
     },
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "task",
-    "show_toast": false,
-    "announce_to_chat": false
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
   },
   "criteria": {
-    "impossible": {
-      "trigger": "minecraft:impossible"
+    "has_infinite_grindingball": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grindingballadditions:infinite_grindingball"
+            ]
+          }
+        ]
+      }
     }
   }
 }
-

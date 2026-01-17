@@ -2,7 +2,7 @@
   "item.grindingballadditions.allthemodium_grindingball": "Allthemodium-Schleifkugel",
   "item.grindingballadditions.unobtainium_grindingball": "Unobtainium-Schleifkugel",
   "item.grindingballadditions.vibranium_grindingball": "Vibranium-Schleifkugel",
-  "item.grindingballadditions.infinite_grindingball": "Enderium-Schleifkugel",
+  "item.grindingballadditions.infinite_grindingball": "Unendliche-Schleifkugel",
   "tab.grindingballadditions.grindingball": "Schleifkugeln",
   "advancements.grindingballadditions.root.title": "Schleifkugeln",
   "advancements.grindingballadditions.root.description": "Entdecke die Kraft der Schleifkugeln!",
@@ -13,5 +13,5 @@
   "advancements.grindingballadditions.vibranium_grindingball.title": "Ultimative Schärfe!",
   "advancements.grindingballadditions.vibranium_grindingball.description": "Hol dir die Vibranium-Schleifkugel!",
   "advancements.grindingballadditions.infinite_grindingball.title": "Die perfekte Schleife!",
-  "advancements.grindingballadditions.infinite_grindingball.description": "Du hast die ultimative Enderium-Schleifkugel erhalten. Jetzt kann dich nichts mehr verlangsamen!"
+  "advancements.grindingballadditions.infinite_grindingball.description": "Du hast die ultimative Unendliche-Schleifkugel erhalten. Jetzt kann dich nichts mehr verlangsamen!"
 }
