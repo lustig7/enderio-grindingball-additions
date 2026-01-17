@@ -1,0 +1,32 @@
+{
+  "parent": "grindingballadditions:root",
+  "display": {
+    "icon": {
+      "id": "grindingballadditions:vibranium_grindingball"
+    },
+    "title": {
+      "translate": "advancements.grindingballadditions.vibranium_grindingball.title"
+    },
+    "description": {
+      "translate": "advancements.grindingballadditions.vibranium_grindingball.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_vibranium_grindingball": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grindingballadditions:vibranium_grindingball"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

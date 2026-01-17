@@ -1,0 +1,17 @@
+{
+  "item.grindingballadditions.allthemodium_grindingball": "Bille de Meulage d'Allthemodium",
+  "item.grindingballadditions.unobtainium_grindingball": "Bille de Meulage d'Unobtainium",
+  "item.grindingballadditions.vibranium_grindingball": "Bille de Meulage de Vibranium",
+  "item.grindingballadditions.infinite_grindingball": "Bille de Meulage d'Enderium",
+  "tab.grindingballadditions.grindingball": "Billes de Meulage",
+  "advancements.grindingballadditions.root.title": "Billes de Meulage",
+  "advancements.grindingballadditions.root.description": "Découvrez la puissance des billes de meulage !",
+  "advancements.grindingballadditions.allthemodium_grindingball.title": "Premier Meulage !",
+  "advancements.grindingballadditions.allthemodium_grindingball.description": "Essayez une bille de meulage d'Allthemodium !",
+  "advancements.grindingballadditions.unobtainium_grindingball.title": "Encore plus tranchant !",
+  "advancements.grindingballadditions.unobtainium_grindingball.description": "Bille de meulage d'Unobtainium à la rescousse !",
+  "advancements.grindingballadditions.vibranium_grindingball.title": "Tranchant Ultime !",
+  "advancements.grindingballadditions.vibranium_grindingball.description": "Obtenez la bille de meulage de Vibranium !",
+  "advancements.grindingballadditions.infinite_grindingball.title": "Le Meulage Parfait !",
+  "advancements.grindingballadditions.infinite_grindingball.description": "Vous avez obtenu la bille de meulage d'Enderium ultime. Maintenant, rien ne peut vous ralentir !"
+}

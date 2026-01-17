@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "A": {
+      "item": "allthemodium:allthemodium_ingot"
+    },
+    "G": {
+      "item": "enderio:grains_of_infinity"
+    }
+  },
+  "pattern": [" AG", "ADA", "GA "],
+  "result": {
+    "count": 1,
+    "id": "grindingballadditions:allthemodium_grindingball"
+  }
+}

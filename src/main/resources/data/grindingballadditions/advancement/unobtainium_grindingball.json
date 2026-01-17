@@ -1,0 +1,32 @@
+{
+  "parent": "grindingballadditions:root",
+  "display": {
+    "icon": {
+      "id": "grindingballadditions:unobtainium_grindingball"
+    },
+    "title": {
+      "translate": "advancements.grindingballadditions.unobtainium_grindingball.title"
+    },
+    "description": {
+      "translate": "advancements.grindingballadditions.unobtainium_grindingball.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_unobtainium_grindingball": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grindingballadditions:unobtainium_grindingball"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

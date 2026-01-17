@@ -1,0 +1,32 @@
+{
+  "parent": "grindingballadditions:root",
+  "display": {
+    "icon": {
+      "id": "grindingballadditions:allthemodium_grindingball"
+    },
+    "title": {
+      "translate": "advancements.grindingballadditions.allthemodium_grindingball.title"
+    },
+    "description": {
+      "translate": "advancements.grindingballadditions.allthemodium_grindingball.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_allthemodium_grindingball": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "grindingballadditions:allthemodium_grindingball"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
