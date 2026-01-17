@@ -1,22 +1,29 @@
-package item.grindingball;
+package grindingballadditions.grindingball;
 
 import net.enderio.grindingballadditions.component.ModDataComponents;
 import com.enderio.base.api.grindingball.GrindingBallData;
+
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.function.Supplier;
+
 public class CustomGrindingBall extends Item {
 
-    private final GrindingBallData grindingBallData;
+    private final Supplier<GrindingBallData> grindingBallDataSupplier;
+    private GrindingBallData cachedData;
 
-    public CustomGrindingBall(Properties properties, GrindingBallData grindingBallData) {
+    public CustomGrindingBall(Properties properties, Supplier<GrindingBallData> grindingBallDataSupplier) {
         super(properties);
-        this.grindingBallData = grindingBallData;
+        this.grindingBallDataSupplier = grindingBallDataSupplier;
     }
 
     public GrindingBallData getGrindingBallData(@NotNull ItemStack stack) {
-        return grindingBallData;
+        if (cachedData == null) {
+            cachedData = grindingBallDataSupplier.get();
+        }
+        return cachedData;
     }
 
     @Override

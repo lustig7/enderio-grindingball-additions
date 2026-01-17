@@ -15,10 +15,6 @@ public class ModDataComponents {
     private static final DeferredRegister.DataComponents DATA_COMPONENT_TYPES = DeferredRegister.
             createDataComponents(Registries.DATA_COMPONENT_TYPE, "enderio");
 
-    public static final DeferredHolder<DataComponentType<?>, DataComponentType<CapacitorData>> CAPACITOR_DATA_TYPE =
-            register("capacitor_data",
-            builder -> builder.persistent(CapacitorData.CODEC));
-
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<GrindingBallData>>
             GRINDING_BALL_DATA_TYPE = register("grinding_ball",
             builder -> builder.persistent(GrindingBallData.CODEC));

@@ -1,6 +1,7 @@
 package net.enderio.grindingballadditions;
 
-import item.Items;
+
+import grindingballadditions.GrindingItems;
 import net.enderio.grindingballadditions.component.ModDataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -9,8 +10,10 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.event.lifecycle.InterModEnqueueEvent;
@@ -19,50 +22,62 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-// The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(GrindingballAdditions.MOD_ID)
 public class GrindingballAdditions {
 
     public static final String MOD_ID = "grindingballadditions";
+    private static final Logger LOGGER = LoggerFactory.getLogger(GrindingballAdditions.class);
+    private static final boolean HAS_CAPACITOR_MOD = ModList.get().isLoaded("capacitoradditions");
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister
             .create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> GRINDING_BALL_TAB = CREATIVE_MODE_TABS
-            .register("grindingball_tab", () -> CreativeModeTab.builder()
+    // Only create GRINDING_BALL_TAB if capacitoradditions is NOT loaded
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> GRINDING_BALL_TAB =
+        !HAS_CAPACITOR_MOD ? CREATIVE_MODE_TABS.register("grindingball_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("tab.grindingballadditions.grindingball"))
-                    .icon(() -> Items.unobtainium_grindingball.get().getDefaultInstance())
+                    .icon(() -> GrindingItems.unobtainium_grindingball.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
-                        output.accept(Items.allthemodium_grindingball.get());
-                        output.accept(Items.vibranium_grindingball.get());
-                        output.accept(Items.unobtainium_grindingball.get());
-                        output.accept(Items.infinite_grindingball.get());
-                    }).build());
+                        output.accept(GrindingItems.allthemodium_grindingball.get());
+                        output.accept(GrindingItems.vibranium_grindingball.get());
+                        output.accept(GrindingItems.unobtainium_grindingball.get());
+                        output.accept(GrindingItems.infinite_grindingball.get());
+                    }).build()) : null;
 
     public GrindingballAdditions(IEventBus modEventBus, ModContainer modContainer) {
+        // Register configuration FIRST before registering items
+        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
         modEventBus.addListener(this::commonSetup);
+        GrindingItems.register(modEventBus);
 
-        Items.register(modEventBus);
+        // Only register CREATIVE_MODE_TABS if capacitoradditions is NOT loaded
+        if (!HAS_CAPACITOR_MOD) {
+            CREATIVE_MODE_TABS.register(modEventBus);
+        }
 
-        CREATIVE_MODE_TABS.register(modEventBus);
         ModDataComponents.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::enqueueIMC);
-        // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
-
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        // If capacitoradditions is loaded, add to capacitor tab
+        if (HAS_CAPACITOR_MOD && event.getTabKey().location().toString().equals("capacitoradditions:capacitor_tab")) {
+            event.accept(GrindingItems.allthemodium_grindingball.get());
+            event.accept(GrindingItems.vibranium_grindingball.get());
+            event.accept(GrindingItems.unobtainium_grindingball.get());
+            event.accept(GrindingItems.infinite_grindingball.get());
+        }
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {

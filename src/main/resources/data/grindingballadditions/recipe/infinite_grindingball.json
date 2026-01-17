@@ -2,19 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "D": {
-      "item": "minecraft:diamond"
-    },
     "E": {
-      "item": "enderio:enderium_alloy_ingot"
+      "item": "allthemodium:unobtainium_vibranium_alloy_ingot"
     },
     "G": {
       "item": "enderio:grains_of_infinity"
     }
   },
-  "pattern": [" EG", "EDE", "GE "],
+  "pattern": ["GEG", "EEE", "GEG"],
   "result": {
     "count": 1,
-    "id": "grindingballadditions:enderium_grindingball"
+    "id": "grindingballadditions:infinite_grindingball"
   }
 }

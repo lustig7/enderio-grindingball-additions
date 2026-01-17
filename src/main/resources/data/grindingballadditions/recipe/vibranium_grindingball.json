@@ -2,19 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "D": {
-      "item": "minecraft:diamond"
-    },
+
     "V": {
       "item": "allthemodium:vibranium_ingot"
-    },
-    "G": {
-      "item": "enderio:grains_of_infinity"
     }
   },
-  "pattern": [" VG", "VDV", "GV "],
+  "pattern": [" V ", "VVV", " V "],
   "result": {
-    "count": 1,
+    "count": 64,
     "id": "grindingballadditions:vibranium_grindingball"
   }
 }

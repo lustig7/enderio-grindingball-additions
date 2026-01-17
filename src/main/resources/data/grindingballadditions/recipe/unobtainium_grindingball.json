@@ -2,19 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "D": {
-      "item": "minecraft:diamond"
-    },
+
     "U": {
       "item": "allthemodium:unobtainium_ingot"
-    },
-    "G": {
-      "item": "enderio:grains_of_infinity"
     }
   },
-  "pattern": [" UG", "UDU", "GU "],
+  "pattern": [" U ", "UUU", " U "],
   "result": {
-    "count": 1,
+    "count": 64,
     "id": "grindingballadditions:unobtainium_grindingball"
   }
 }
