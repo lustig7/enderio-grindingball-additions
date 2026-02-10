@@ -1,7 +1,6 @@
 package net.enderio.grindingballadditions.component;
 
-import com.enderio.base.api.capacitor.CapacitorData;
-import com.enderio.base.api.grindingball.GrindingBallData;
+import com.enderio.enderio.api.components.GrindingBallData;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
 import net.neoforged.bus.api.IEventBus;

@@ -1,7 +1,7 @@
 package grindingballadditions.grindingball;
 
 import net.enderio.grindingballadditions.component.ModDataComponents;
-import com.enderio.base.api.grindingball.GrindingBallData;
+import com.enderio.enderio.api.components.GrindingBallData;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
