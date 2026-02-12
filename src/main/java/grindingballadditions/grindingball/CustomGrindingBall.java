@@ -1,6 +1,6 @@
 package grindingballadditions.grindingball;
 
-import net.enderio.grindingballadditions.component.ModDataComponents;
+import com.enderio.enderio.api.EnderIODataComponents;
 import com.enderio.enderio.api.components.GrindingBallData;
 
 import net.minecraft.world.item.Item;
@@ -28,8 +28,8 @@ public class CustomGrindingBall extends Item {
 
     @Override
     public void verifyComponentsAfterLoad(ItemStack stack) {
-        if(stack.get(ModDataComponents.GRINDING_BALL_DATA_TYPE.value()) == null) {
-            stack.set(ModDataComponents.GRINDING_BALL_DATA_TYPE.value(), getGrindingBallData(stack));
+        if(stack.get(EnderIODataComponents.GRINDING_BALL) == null) {
+            stack.set(EnderIODataComponents.GRINDING_BALL, getGrindingBallData(stack));
         }
     }
 }
