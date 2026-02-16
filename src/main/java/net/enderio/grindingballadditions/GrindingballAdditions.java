@@ -2,7 +2,6 @@ package net.enderio.grindingballadditions;
 
 
 import grindingballadditions.GrindingItems;
-import net.enderio.grindingballadditions.component.ModDataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -58,8 +57,6 @@ public class GrindingballAdditions {
         if (!HAS_CAPACITOR_MOD) {
             CREATIVE_MODE_TABS.register(modEventBus);
         }
-
-        ModDataComponents.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

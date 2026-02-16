@@ -1,7 +1,7 @@
 package grindingballadditions.grindingball;
 
 
-import com.enderio.base.api.grindingball.GrindingBallData;
+import com.enderio.enderio.api.components.GrindingBallData;
 import net.enderio.grindingballadditions.Config;
 
 
