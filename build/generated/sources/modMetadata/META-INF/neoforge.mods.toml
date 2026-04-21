@@ -23,7 +23,7 @@ license="All Rights Reserved"
 modId="grindingballadditions" #mandatory
 
 # The version number of the mod
-version="1.0.0" #mandatory
+version="2.1.0" #mandatory
 
 # A display name for the mod
 displayName="Enderio Grindingball Additions" #mandatory
@@ -89,7 +89,7 @@ description='''Adds Allthemodium, Vibranium, Enderium and Infinity grindingballs
     modId="allthemodium"
     type="required"
     # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[2.0.0,]"
+    versionRange="[3.0.0,]"
     ordering="NONE"
     side="BOTH"
 

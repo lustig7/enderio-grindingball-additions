@@ -1,0 +1,31 @@
+{
+  "values": {
+    "grindingballadditions:allthemodium_grindingball": {
+      "OutputMultiplier": 1.8,
+      "BonusMultiplier": 2.0,
+      "PowerUse": 1.4,
+      "Durability": 360000
+    },
+    "grindingballadditions:vibranium_grindingball": {
+      "OutputMultiplier": 2.0,
+      "BonusMultiplier": 4.0,
+      "PowerUse": 2.0,
+      "Durability": 1060000
+    },
+    "grindingballadditions:unobtainium_grindingball": {
+      "OutputMultiplier": 3.0,
+      "BonusMultiplier": 2.0,
+      "PowerUse": 1.0,
+      "Durability": 1600000
+    },
+    "grindingballadditions:infinite_grindingball": {
+      "OutputMultiplier": 3.0,
+      "BonusMultiplier": 3.0,
+      "PowerUse": 3.0,
+      "Durability": 2147483647
+    }
+  }
+}
+
+
+
