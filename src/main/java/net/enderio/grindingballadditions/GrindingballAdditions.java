@@ -4,6 +4,8 @@ package net.enderio.grindingballadditions;
 import grindingballadditions.GrindingItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -29,6 +31,10 @@ public class GrindingballAdditions {
     public static final String MOD_ID = "grindingballadditions";
     private static final Logger LOGGER = LoggerFactory.getLogger(GrindingballAdditions.class);
     private static final boolean HAS_CAPACITOR_MOD = ModList.get().isLoaded("capacitoradditions");
+    private static final ResourceKey<CreativeModeTab> CAPACITOR_TAB_KEY = ResourceKey.create(
+            Registries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath("capacitoradditions", "capacitor_tab")
+    );
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister
             .create(Registries.CREATIVE_MODE_TAB, MOD_ID);
@@ -67,7 +73,7 @@ public class GrindingballAdditions {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         // If capacitoradditions is loaded, add to capacitor tab
-        if (HAS_CAPACITOR_MOD && event.getTabKey().location().toString().equals("capacitoradditions:capacitor_tab")) {
+        if (HAS_CAPACITOR_MOD && CAPACITOR_TAB_KEY.equals(event.getTabKey())) {
             event.accept(GrindingItems.allthemodium_grindingball.get());
             event.accept(GrindingItems.vibranium_grindingball.get());
             event.accept(GrindingItems.unobtainium_grindingball.get());
